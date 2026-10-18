@@ -1,0 +1,9 @@
+/vendor
+/node_modules
+/resources/dist/hot
+/.phpunit.cache
+/tests/__fixtures__/dev-null/*
+!/tests/__fixtures__/dev-null/.gitkeep
+/tests/__fixtures__/content
+composer.lock
+.DS_Store
