@@ -36,6 +36,7 @@ Ad management for Statamic 6. Create placements for the slots in your templates,
 - [Security notes](#security-notes)
 - [Developing](#developing)
 - [Support](#support)
+- [License](#license)
 
 ## Requirements
 
@@ -347,3 +348,7 @@ vendor/bin/phpunit   # PHP tests
 - Email: hello@usamamuneer.me
 
 Please include your Statamic, Laravel and PHP versions, and what you expected to happen.
+
+## License
+
+Billboard is free software, released under the [MIT license](LICENSE.md).

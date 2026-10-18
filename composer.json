@@ -3,7 +3,7 @@
     "description": "Ad management for Statamic: placements, weighted rotation, scheduling, targeting and privacy-friendly first-party reporting.",
     "version": "1.0",
     "type": "statamic-addon",
-    "license": "proprietary",
+    "license": "MIT",
     "keywords": [
         "statamic",
         "statamic-addon",
