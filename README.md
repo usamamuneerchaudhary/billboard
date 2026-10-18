@@ -2,6 +2,12 @@
   <img src="brand/logo/wordmark.png" alt="Billboard" width="300">
 </p>
 
+
+<p align="center">
+<a href="https://packagist.org/packages/usamamuneerchaudhary/billboard"><img src="https://img.shields.io/packagist/v/usamamuneerchaudhary/billboard" alt="Packagist"></a>
+  <a href="https://packagist.org/packages/usamamuneerchaudhary/billboard"><img src="https://img.shields.io/packagist/l/usamamuneerchaudhary/billboard" alt="License"></a>
+</p>
+
 Ad management for Statamic 6. Create placements for the slots in your templates, add image, text or ad network ads to them, and let Billboard handle rotation, scheduling, targeting and reporting.
 
 - **Placements** with weighted or ordered rotation, several ads at once, reserved sizes and a fallback.
