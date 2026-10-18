@@ -23,7 +23,7 @@
         "email": "hello@usamamuneer.me"
     },
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "statamic/cms": "^6.0"
     },
     "require-dev": {

@@ -18,7 +18,7 @@ return [
     'lockfile' => false,
     'artisan' => 'vendor/bin/testbench',
 
-    'php' => ['8.2', '8.3', '8.4'],
+    'php' => ['8.3', '8.4'],
     'node' => '22',
 
     'triggers' => [
