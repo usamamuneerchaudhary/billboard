@@ -41,23 +41,18 @@ Ad management for Statamic 6. Create placements for the slots in your templates,
 ## Requirements
 
 - Statamic 6
-- PHP 8.2 or later
+- PHP 8.3 or later
 - A database connection for reporting. SQLite, MySQL, MariaDB and PostgreSQL are supported. Ads display without one; only reporting and impression and click limits need it.
 
 ## Installation
 
 ```bash
 composer require usamamuneerchaudhary/billboard
+php artisan vendor:publish --tag=billboard --force
 php artisan migrate
 ```
 
-Statamic publishes Billboard's control panel and front-end assets automatically when the package is installed. If you deploy with a build step that skips this, publish them yourself:
-
-```bash
-php artisan vendor:publish --tag=billboard --force
-```
-
-The migration creates one table, `billboard_stats`. To change the table name or connection, publish the config first (see [Configuration](#configuration)).
+`vendor:publish` copies the front-end script and stylesheet to `public/vendor/billboard`. The control panel loads its assets from the package. The migration creates one table, `billboard_stats`. To change the table name or connection, publish the config first (see [Configuration](#configuration)).
 
 ## Quick start
 
