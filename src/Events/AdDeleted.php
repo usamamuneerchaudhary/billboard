@@ -12,7 +12,5 @@ class AdDeleted
     /**
      * Create the event for an ad that was deleted.
      */
-    public function __construct(public Ad $ad)
-    {
-    }
+    public function __construct(public Ad $ad) {}
 }

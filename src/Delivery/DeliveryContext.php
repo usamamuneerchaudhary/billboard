@@ -15,8 +15,7 @@ final class DeliveryContext
         public readonly CarbonImmutable $now,
         public readonly ?string $site,
         public readonly string $path,
-    ) {
-    }
+    ) {}
 
     /**
      * Build a delivery context from the current request.

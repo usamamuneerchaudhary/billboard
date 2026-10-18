@@ -1,0 +1,11 @@
+providers:
+  - Usamamuneerchaudhary\Slipway\SlipwayServiceProvider
+
+env:
+  APP_ENV: testing
+  APP_KEY: base64:m7xjq0B5QnGkF4f8S2sQ6r1a9U3dC0vYh5tZpL2wE8o=
+  CACHE_STORE: array
+  SESSION_DRIVER: array
+  QUEUE_CONNECTION: sync
+  DB_CONNECTION: sqlite
+  DB_DATABASE: ':memory:'

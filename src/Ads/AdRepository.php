@@ -13,9 +13,7 @@ class AdRepository
     /**
      * Create the repository with the YAML store.
      */
-    public function __construct(private YamlDirectory $store)
-    {
-    }
+    public function __construct(private YamlDirectory $store) {}
 
     /**
      * Return every ad, sorted by title.

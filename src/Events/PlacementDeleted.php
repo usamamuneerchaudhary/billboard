@@ -12,7 +12,5 @@ class PlacementDeleted
     /**
      * Create the event for a placement that was deleted.
      */
-    public function __construct(public Placement $placement)
-    {
-    }
+    public function __construct(public Placement $placement) {}
 }

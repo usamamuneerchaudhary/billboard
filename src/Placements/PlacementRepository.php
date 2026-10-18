@@ -13,9 +13,7 @@ class PlacementRepository
     /**
      * Create the repository with the YAML store and ad repository.
      */
-    public function __construct(private YamlDirectory $store, private AdRepository $ads)
-    {
-    }
+    public function __construct(private YamlDirectory $store, private AdRepository $ads) {}
 
     /**
      * Return every placement, sorted by title.

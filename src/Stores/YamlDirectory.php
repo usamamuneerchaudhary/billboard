@@ -19,8 +19,7 @@ class YamlDirectory
         private Filesystem $files,
         private Cache $cache,
         private string $path,
-    ) {
-    }
+    ) {}
 
     /**
      * Return the directory path.

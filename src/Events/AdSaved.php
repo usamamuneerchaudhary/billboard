@@ -12,7 +12,5 @@ class AdSaved
     /**
      * Create the event for an ad that was saved.
      */
-    public function __construct(public Ad $ad)
-    {
-    }
+    public function __construct(public Ad $ad) {}
 }

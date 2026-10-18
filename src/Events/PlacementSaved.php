@@ -12,7 +12,5 @@ class PlacementSaved
     /**
      * Create the event for a placement that was saved.
      */
-    public function __construct(public Placement $placement)
-    {
-    }
+    public function __construct(public Placement $placement) {}
 }

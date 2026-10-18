@@ -17,9 +17,7 @@ class Placement
      *
      * @param  array<string, mixed>  $data
      */
-    public function __construct(private string $handle, private array $data = [])
-    {
-    }
+    public function __construct(private string $handle, private array $data = []) {}
 
     /**
      * Build the synthetic placement used when an ad is rendered on its own.

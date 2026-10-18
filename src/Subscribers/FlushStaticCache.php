@@ -17,9 +17,7 @@ class FlushStaticCache
     /**
      * Create the subscriber with addon settings.
      */
-    public function __construct(private Settings $settings)
-    {
-    }
+    public function __construct(private Settings $settings) {}
 
     /**
      * Register handlers for ad and placement save and delete events.

@@ -18,9 +18,7 @@ final class BotDetector
      *
      * @param  array<int, string>  $extraPatterns
      */
-    public function __construct(private array $extraPatterns = [])
-    {
-    }
+    public function __construct(private array $extraPatterns = []) {}
 
     /**
      * Decide whether a user agent looks like a bot or automated client.
