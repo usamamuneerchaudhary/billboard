@@ -1,0 +1,60 @@
+tabs:
+  main:
+    sections:
+      -
+        display: Reporting
+        instructions: 'Billboard counts impressions and clicks on your own server. Nothing is sent to third parties, and no IP addresses, cookies or visitor IDs are stored.'
+        fields:
+          -
+            handle: tracking_enabled
+            field:
+              type: toggle
+              display: 'Count impressions and clicks'
+              instructions: 'When off, ads still display but no statistics are recorded.'
+              default: true
+          -
+            handle: respect_privacy_signals
+            field:
+              type: toggle
+              display: 'Respect privacy signals'
+              instructions: 'Skip counting for visitors whose browser sends Global Privacy Control or Do Not Track.'
+              default: true
+              if:
+                tracking_enabled: true
+          -
+            handle: retention_days
+            field:
+              type: integer
+              display: 'Keep statistics for (days)'
+              instructions: 'Daily totals older than this are deleted by the scheduled `billboard:prune-stats` command. Use 0 to keep everything.'
+              default: 395
+              min: 0
+              if:
+                tracking_enabled: true
+      -
+        display: Display
+        fields:
+          -
+            handle: default_label
+            field:
+              type: text
+              display: 'Default disclosure label'
+              instructions: 'Shown above ads so visitors can tell them apart from your content. Placements can override or hide it.'
+              default: Advertisement
+          -
+            handle: include_default_styles
+            field:
+              type: toggle
+              display: 'Include default styles'
+              instructions: 'A small stylesheet for the label, images and text ads. Turn off to style ads entirely in your own CSS.'
+              default: true
+      -
+        display: Caching
+        fields:
+          -
+            handle: flush_static_cache
+            field:
+              type: toggle
+              display: 'Clear the static cache when ads change'
+              instructions: 'Useful for placements that choose ads on the server. Placements that choose ads in the browser pick up schedule changes without it.'
+              default: false

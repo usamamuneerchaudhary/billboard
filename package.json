@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "npm run build:cp && npm run build:frontend",
+        "build:cp": "vite build",
+        "build:frontend": "esbuild resources/frontend/billboard.js --minify --target=es2017 --outfile=resources/dist/frontend/billboard.js && esbuild resources/frontend/billboard.css --minify --outfile=resources/dist/frontend/billboard.css",
+        "test": "node --test tests/js/*.test.mjs"
+    },
+    "dependencies": {
+        "@statamic/cms": "file:./vendor/statamic/cms/resources/dist-package"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.1.8",
+        "esbuild": "^0.28.0",
+        "jsdom": "^26.0.0",
+        "laravel-vite-plugin": "^3.0.0",
+        "tailwindcss": "^4.1.8",
+        "vite": "^8.0.16"
+    }
+}
