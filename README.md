@@ -1,5 +1,3 @@
-# Billboard
-
 <p align="center">
   <img src="brand/logo/wordmark.png" alt="Billboard" width="300">
 </p>
