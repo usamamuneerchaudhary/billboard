@@ -2,7 +2,7 @@
 
 All notable changes to Billboard are documented here. This project follows [Semantic Versioning](https://semver.org/).
 
-## 1.1
+## 1.2
 
 ### Changed
 
