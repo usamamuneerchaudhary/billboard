@@ -1,7 +1,6 @@
 {
     "name": "usamamuneerchaudhary/billboard",
     "description": "Ad management for Statamic: placements, weighted rotation, scheduling, targeting and privacy-friendly first-party reporting.",
-    "version": "1.1",
     "type": "statamic-addon",
     "license": "MIT",
     "keywords": [

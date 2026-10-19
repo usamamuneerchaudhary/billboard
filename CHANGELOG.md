@@ -2,6 +2,15 @@
 
 All notable changes to Billboard are documented here. This project follows [Semantic Versioning](https://semver.org/).
 
+## 1.1.1
+
+### Changed
+
+- Relicensed Billboard under the MIT License. Packagist 1.0 is still the earlier proprietary release, because the 1.1 tag declared `"version": "1.0"` and Packagist skipped it.
+- Removed the `version` field from `composer.json`. Composer and Packagist take the version from the git tag, so a tag can no longer publish as a different version.
+- Corrected the README to match the package: PHP 8.3 or later, `php artisan vendor:publish --tag=billboard` before migrate, and the MIT license.
+- Listed the Advertisement field, the Markdown "Insert advertisement" action, and the Advertisement set for Bard and Replicator. Those shipped in 1.0.
+
 ## 1.0
 
 ### Added
